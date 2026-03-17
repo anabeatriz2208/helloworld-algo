@@ -97,7 +97,7 @@ jobs:
           $secretName = ''
           $secrets = '${{ steps.ReadSecrets.outputs.Secrets }}' | ConvertFrom-Json
           $authContext = $null
-          "$($envName)_AUTHCONTEXT" | ForEach-Object {
+          "AUTHCONTEXT" | ForEach-Object {
             if (!($authContext)) {
               if ($secrets."$_") {
                 Write-Host "Using $_ secret as AuthContext"
