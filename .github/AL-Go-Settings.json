@@ -4,7 +4,7 @@
   "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
   "environments": [
     {
-      "name": "DEV",
+      "name": "PT_SBOX",
       "type": "Publish",
       "branch": "dev"
     }
